@@ -26,7 +26,7 @@ from decimal import Decimal
 
 price = Decimal(input("Введіть ціну: "))
 discount = Decimal(input("Розмір знижки: "))
-n = round((p * d)/100, 2)
+n = round((price * discount)/100, 2)
 print("Ціна зі знижкою :", price - n)
 
 # 5. Остання цифра числа
@@ -36,8 +36,8 @@ print(n%10)
 
 # 6. Периметр прямокутника
 
-a = float(input("Введіть число: "))
-b = float(input("Введіть число: "))
+a = float(input("Введіть довжину: "))
+b = float(input("Введіть ширину: "))
 print("Периметр:", (a+b)*2)
 
 #7. Виведення числа в стовпчик
