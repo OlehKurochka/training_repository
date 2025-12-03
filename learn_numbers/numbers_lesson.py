@@ -21,6 +21,7 @@ minutes = n % 60
 print(hours, "години", minutes, "хвилин")
 
 # 4. Розрахунок знижки
+
 from decimal import Decimal
 
 price = Decimal(input("Введіть ціну: "))
@@ -29,6 +30,7 @@ n = round((p * d)/100, 2)
 print("Ціна зі знижкою :", price - n)
 
 # 5. Остання цифра числа
+
 n = int(input("Введіть число: "))
 print(n%10)
 
@@ -38,7 +40,7 @@ a = float(input("Введіть число: "))
 b = float(input("Введіть число: "))
 print("Периметр:", (a+b)*2)
 
-7. Виведення числа в стовпчик
+#7. Виведення числа в стовпчик
 
 n = int(input("Введіть число 4-х значне число: "))
 n1, n2 = divmod(n, 100)
