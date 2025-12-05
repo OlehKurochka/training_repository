@@ -16,3 +16,14 @@ elif action == "/":
         print("На нуль ділити не можна!")
     else:
         print("Result", num1 / num2)
+
+# 2. Перемістити елемент у списку
+
+lst = []
+if lst:
+    last_element = lst.pop()
+    lst.insert(0, last_element)
+    print(lst)
+else:
+    print(lst)
+
