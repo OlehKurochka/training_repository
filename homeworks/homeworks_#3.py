@@ -13,13 +13,13 @@ elif action == "*":
 elif action == "/":
     if num2 == 0:
         num2 = None
-        print("На нуль ділити не можна!")
+        print("You can't divide by zero!")
     else:
         print("Result", num1 / num2)
 
 # 2. Перемістити елемент у списку
 
-lst = []
+lst = [1]
 if lst:
     last_element = lst.pop()
     lst.insert(0, last_element)
@@ -27,3 +27,13 @@ if lst:
 else:
     print(lst)
 
+# 3. Розділити один список на два списки
+
+lst = [1, 2, 3, 4, 5]
+half_list = ((len(lst) + 1) // 2)
+first_list = lst[:half_list]
+second_list = lst[half_list:]
+new_lst = list()
+new_lst.append(first_list)
+new_lst.append(second_list)
+print(new_lst)
