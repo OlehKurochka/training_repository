@@ -15,5 +15,14 @@ if lst:
     summa = sum(lst[::2] * lst[-1])
 else:
     summa = 0
-print(summa)
+print(lst, '=>', summa)
 
+# 3. Список із 3 елементів
+
+from random import randint
+
+lst = []
+for element in range(randint(3, 10)):
+    lst.append(randint(1, 10))
+new_lst = [lst[0], lst[2], lst[-2]]
+print(lst, '==', new_lst)
