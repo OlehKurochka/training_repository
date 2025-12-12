@@ -3,22 +3,23 @@
 num1 = float(input("Enter first number: "))
 num2 = float(input("Enter second number: "))
 action = input("What action to take (+, -, *, /): ")
+result = None
 
-if action == "+, -, *, /":
-    if action == "+":
-        result = num1 + num2
-    elif action == "-":
-        result = num1 - num2
-    elif action == "*":
-        result = num1 * num2
-    elif action == "/":
-        if num2 == 0:
-            print("You can't divide by zero!")
-        else:
-            result = num1 / num2
-    print(result)
+if action == "+":
+    result = num1 + num2
+elif action == "-":
+    result = num1 - num2
+elif action == "*":
+    result = num1 * num2
+elif action == "/":
+    if num2 == 0:
+        print("You can't divide by zero!")
+    else:
+        result = num1 / num2
 else:
     print("Invalid action!")
+if result is not None:
+    print("Result:", result)
 
 # 2. Перемістити елемент у списку
 
