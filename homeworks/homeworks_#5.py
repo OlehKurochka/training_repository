@@ -50,7 +50,7 @@ while True:
     if command != "y":
         break
 
-3. hashtag
+#3. hashtag
 
 from string import punctuation
 text = input("Enter text: ")
