@@ -9,8 +9,5 @@ print(popular_words("When I was One I had just begun When I was Two I was nearly
 
 #2. Різниця між числами
 def difference(*args):
-    if len(args) == 0:
-        return 0
-    else:
-        return round(max(args) - min(args), 2)
+    return 0 if len(args) == 0 else round(max(args) - min(args), 2)
 print(difference(10.2, -2.2, 0, 1.1, 0.5))
