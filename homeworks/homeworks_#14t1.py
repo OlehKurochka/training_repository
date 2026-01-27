@@ -1,13 +1,13 @@
 # 1. Виняток користувача
 
-# class UserError(Exception):
-#     def __init__(self, message, num=None):
-#         super().__init__()
-#         self.message = message
-#         self.num = num
-#
-#     def get_exception_message(self):
-#         return self.message
+class UserError(Exception):
+    def __init__(self, message, num=None):
+        super().__init__()
+        self.message = message
+        self.num = num
+
+    def get_exception_message(self):
+        return self.message
 
 class Human:
 
@@ -49,10 +49,10 @@ class Group:
                 return student
         return None
 
-    # def count_students(self):
-    #     if len(self.group) > 10:
-    #         raise UserError("More than 10 students!", len(self.group))
-    #     return len(self.group)
+    def count_students(self):
+        if len(self.group) > 10:
+            raise UserError("More than 10 students!", len(self.group))
+        return len(self.group)
 
     def __str__(self):
         all_students = ''
@@ -66,9 +66,9 @@ gr = Group('PD1')
 gr.add_student(st1)
 gr.add_student(st2)
 
-# try:
-#     print(gr.count_students())
-# except UserError as err:
-#     print(f'Error: {err.get_exception_message()} (number: {err.num})')
+try:
+    print(gr.count_students())
+except UserError as err:
+    print(f'Error: {err.get_exception_message()} (number: {err.num})')
 
 
