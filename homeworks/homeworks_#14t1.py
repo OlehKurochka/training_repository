@@ -70,5 +70,3 @@ try:
     print(gr.count_students())
 except UserError as err:
     print(f'Error: {err.get_exception_message()} (number: {err.num})')
-
-
